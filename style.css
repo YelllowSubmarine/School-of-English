@@ -1,0 +1,173 @@
+
+.meow {
+  text-align: left;
+  padding-left: 1.25em;
+  padding-bottom: 5.25em;
+}
+.meow1 {
+  text-align: left;
+  padding-left: 1.25em;
+}
+.bear {
+  position: absolute;
+  right: 5%;
+  top: 7%;
+  border-radius: 50%;
+}
+footer {
+  background-color: rgba(21, 91, 152, 0.7);
+  opacity: 0.85;
+  color: #ffffff;
+  padding-left: 0.625em;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+}
+a {
+  color:#775a98;
+}
+a:visited {
+  color:#b11414;
+}
+body {
+  text-align: center;
+  color: #000000;
+  background-image: url('img/4submarine.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 5em;
+}
+article {
+  position: relative;
+  background: rgba(255, 255, 255, 0.66);
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
+  margin-bottom: 1em;
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+
+
+section {
+  display: flex;
+  min-height: 12vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+}
+
+.content h6 {
+  color: #fff;
+  font-size: 2em;
+  position:absolute;
+  transform: translate(-50%, -215%);
+}
+
+.content h6:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 123, 210, 0.7);
+}
+
+.content h6:nth-child(2) {
+  color: rgba(0, 123, 210, 0.7);
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+@media screen and (min-width: 481px){
+  .small {
+    display:none;
+  }
+}
+@media screen and (max-width: 1200px){
+  .content h6 {
+    font-size: 1.65em;
+  }
+}
+@media screen and (max-width: 992px){
+  body {
+    margin: 4em;
+  }
+  .content h6 {
+    font-size: 1.35em;
+  }
+  .bear {
+    display: none;
+  }
+  .meow {
+    padding-bottom: 0em;
+  }
+}
+@media screen and (max-width: 768px){
+  body {
+    margin: 3em;
+  }
+  .content h6 {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px){
+  .large {
+    display:none;
+  }
+  body {
+    margin: 2em;
+  }
+  .content h6 {
+    font-size: 1.2em;
+  } 
+  p {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  .i {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 320px){
+  body {
+    margin: 1em;
+  }
+  .content h6 {
+    font-size: 0.95em;
+  }
+}
